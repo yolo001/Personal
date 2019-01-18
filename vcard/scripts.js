@@ -13,17 +13,9 @@ $(function () {
 	'use strict';
 
 
-	/*
-		Vars
-	*/
-
 	var width = $(window).width();
 	var height = $(window).height();
 
-
-	/*
-		Header Menu Desktop
-	*/
 
 	var container = $('.container');
 	var card_items = $('.card-inner');
@@ -116,9 +108,7 @@ $(function () {
 	});
 
 
-	/*
-		Smoothscroll
-	*/
+	/*Smoothscroll*/
 
 	if ((width < 1024) & $('#home-card').length) {
 		$(window).on('scroll', function () {
@@ -135,9 +125,7 @@ $(function () {
 	}
 
 
-	/*
-		slimScroll
-	*/
+	/*slimScroll*/
 
 	if (width > 1024) {
 		$('.card-inner .card-wrap').slimScroll({
@@ -146,9 +134,7 @@ $(function () {
 	}
 
 
-	/*
-		Hire Button
-	*/
+	/*Hire Button*/
 
 	$('.lnks').on('click', '.lnk.discover', function () {
 		$('.top-menu a[href="#contacts-card"]').trigger('click');
@@ -185,9 +171,7 @@ $(function () {
 	});
 
 
-	/*
-		Initialize masonry items
-	*/
+	/*Initialize masonry items*/
 
 	var $container = $('.grid-items');
 
@@ -201,9 +185,7 @@ $(function () {
 	});
 
 
-	/*
-		12. Initialize masonry filter
-	*/
+	/*12. Initialize masonry filter*/
 
 	$('.filter-button-group').on('change', 'input[type="radio"]', function () {
 		if ($(this).is(':checked')) {
@@ -250,9 +232,7 @@ $(function () {
 	});
 
 
-	/*
-		Popups
-	*/
+
 
 	/* popup image */
 	$('.has-popup-image').magnificPopup({
@@ -352,7 +332,7 @@ $(function () {
 			}
 		},
 		success: "valid",
-		submitHandler: function () {}
+		submitHandler: function () { }
 	});
 
 
@@ -362,10 +342,25 @@ $(function () {
 	});
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
 	var canvas = document.getElementById("particles-js");
 	canvas.width = $("#parent").width();
 	canvas.height = $("#parent").height();
+});
+
+$(document).ready(function() {
+	$("#more").click(function() {
+	  var elem = $("#more").text();
+	  if (elem == "Read More") {
+		//Stuff to do when btn is in the read more state
+		$("#more").text("Read Less");
+		$("#readmore").slideDown();
+	  } else {
+		//Stuff to do when btn is in the read less state
+		$("#more").text("Read More");
+		$("#readmore").slideUp();
+	  }
+	});
   });
 
 
