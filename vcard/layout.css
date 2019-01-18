@@ -855,7 +855,7 @@
 .resume-title,
 .skill-title {
 	padding: 0 0 20px 0;
-	position: relative;
+    position: relative;
 }
 
 .resume-title:after,
@@ -1471,4 +1471,9 @@
 .card-inner.blog-post {
     -webkit-animation: none;
     animation: none;
+}
+
+.fa, .fas {
+    font-weight: 900;
+	font-size: 1.9rem;
 }
