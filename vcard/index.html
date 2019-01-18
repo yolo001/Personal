@@ -49,20 +49,9 @@
       </div>
     </div>
     <!-- background-->
-    <div class="background gradient">
-      <ul class="bg-bubbles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
+    <div id="particles-js">
+    
+    
     <!-- Container-->
     <div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
       <!-- Header-->
@@ -74,7 +63,7 @@
                 <ion-icon name="person"></ion-icon><span class="link">About</span></a></li>
             <li><a href="#resume-card"><span class="icon ion-android-list"></span><span class="link">Resume</span></a></li>
             <li><a href="#works-card"><span class="icon ion-paintbrush"></span><span class="link">Works</span></a></li>
-            <li><a href="#blog-card"><span class="icon ion-chatbox-working"></span><span class="link">Blog</span></a></li>
+            <!-- <li><a href="#blog-card"><span class="icon ion-chatbox-working"></span><span class="link">Blog</span></a></li> -->
             <li><a href="#contacts-card"><span class="icon ion-at"></span><span class="link">Contact</span></a></li>
           </ul>
         </div>
@@ -93,7 +82,7 @@
           <!-- profile socials-->
           <div class="social"><a target="_blank" href="https://dribbble.com/"><span class="fab fa-dribbble"></span></a><a target="_blank" href="https://twitter.com/"><span class="fab fa-twitter"></span></a><a target="_blank" href="https://github.com/"><span class="fab fa-github"></span></a><a target="_blank" href="https://www.spotify.com/"><span class="fab fa-spotify"></span></a><a target="_blank" href="https://stackoverflow.com/"><span class="fab fa-stack-overflow"></span></a></div>
           <!-- profile buttons-->
-          <div class="lnks"><a class="lnk" href="#"><span class="text">Download CV</span><span class="ion ion-archive"></span></a><a class="lnk discover" href="#"><span class="text">Contact Me</span><span class="arrow"></span></a></div>
+          <div class="lnks"><a class="lnk" href="#"><span class="text">Download CV</span><span class="ion ion-archive"></span></a><a class="lnk discover" href="#"><span class="text">Contact Me</span><i class="fas fa-arrow-right"></i></a></div>
         </div>
       </div>
       <!-- Card - About-->
@@ -109,12 +98,16 @@
                 <div class="text-box">
                   <p>
                     I am #prana, front End based on Jakarta, Indonesia. I am also tech enthusiast. write down code in computer is
-                    my hobies, but also sometimes make me dissapointed when the code doens't work, but this is the challanges to
+                    my hobies, but also sometimes make me dissapointed when the code doens't work, but this is the
+                  </p> 
+                  <p id="readmore">
+                    challanges to
                     solve unwork code is not easy. logical thinking, patience, careful, and never quit all those needed to be a
                     developer.
                     on the other hand learn a new things that i never learned before is my pleasure, i also love travel to another
                     place that i have never seen before. this is how i can improve myself to be better.
                   </p>
+                  <a href="#" id="more">Read More</a>
                 </div>
               </div>
               <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
@@ -410,7 +403,8 @@
             <div class="row">
               <!-- skill item-->
               <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-                <div class="skills-list"><i class="fas fa-code"> </i>
+                <div class="skills-list">
+                  <div class="skill-title border-line-h">Tech.</div>
                   <ul>
                     <li class="border-line-h"><i class="fab fa-html5"></i>
                       <div class="name">HTML5</div>
@@ -487,7 +481,7 @@
               </div>
               <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
                 <div class="skills-list">
-                  <div class="skill-title border-line-h">Libralies</div>
+                  <div class="skill-title border-line-h">Libraries</div>
                   <ul>
                     <li><i class="devicon-jquery-plain colored"></i>
                       <div class="name">Jquery</div>
@@ -697,47 +691,7 @@
           </div>
         </div>
       </div>
-      <!-- Card - Blog-->
-      <div class="card-inner blog" id="blog-card">
-        <div class="card-wrap">
-          <!-- Blog-->
-          <div class="content blog">
-            <!-- title-->
-            <div class="title">Latest Posts</div>
-            <!-- content-->
-            <div class="row border-line-v">
-              <!-- blog item-->
-              <div class="col col-d-12 col-t-12 col-m-12 border-line-h">
-                <div class="box-item">
-                  <div class="image"><a href="https://beshley.com/vcard/blog-post.html"><img src="https://beshley.com/vcard/images/blog/blog1.jpg" alt=""><span class="info"><span class="ion ion-document-text"></span></span><span class="date"><strong>20</strong>Jun</span></a></div>
-                  <div class="desc"><a class="name" href="https://beshley.com/vcard/blog-post.html">By spite about do of do allow blush</a>
-                    <div class="category">Design</div>
-                  </div>
-                </div>
-              </div>
-              <!-- blog item-->
-              <div class="col col-d-12 col-t-12 col-m-12 border-line-h">
-                <div class="box-item">
-                  <div class="image"><a href="https://beshley.com/vcard/blog-post.html"><img src="https://beshley.com/vcard/images/blog/blog2.jpg" alt=""><span class="info"><span class="ion ion-document-text"></span></span><span class="date"><strong>19</strong>Jun</span></a></div>
-                  <div class="desc"><a class="name" href="https://beshley.com/vcard/blog-post.html">Two Before Arrow Not Relied</a>
-                    <div class="category">Coding</div>
-                  </div>
-                </div>
-              </div>
-              <!-- blog item-->
-              <div class="col col-d-12 col-t-12 col-m-12 border-line-h">
-                <div class="box-item">
-                  <div class="image"><a href="https://beshley.com/vcard/blog-post.html"><img src="https://beshley.com/vcard/images/blog/blog3.jpg" alt=""><span class="info"><span class="ion ion-document-text"></span></span><span class="date"><strong>20</strong>Jun</span></a></div>
-                  <div class="desc"><a class="name" href="https://beshley.com/vcard/blog-post.html">By spite about do of do allow blush</a>
-                    <div class="category">Travel</div>
-                  </div>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <!-- Card - Contacts-->
       <div class="card-inner contacts" id="contacts-card">
         <div class="card-wrap">
@@ -751,10 +705,10 @@
                 <div class="map" id="map"></div>
                 <div class="info-list">
                   <ul>
-                    <li><strong>Address . . . . .</strong> California, USA</li>
-                    <li><strong>Email . . . . .</strong> adlard@example.com</li>
-                    <li><strong>Phone . . . . .</strong> +123 654 78900</li>
-                    <li><strong>Freelance . . . . .</strong> Available</li>
+                    <li><strong>Address</strong><span>JKT, ID</span></li>
+                    <li><strong>Email</strong><span>programmerbiasa@gmail.com</span> </li>
+                    <li><strong>Phone</strong><span>+628 1314 941385</span> </li>
+                    <li><strong>Freelance</strong><span>Available</span></li>
                   </ul>
                 </div>
               </div>
@@ -800,6 +754,7 @@
         </div>
       </div>
     </div>
+  </div>
     <!--jQuery Scripts-->
     <script src="jquery.min.js"></script>
     <script src="jquery.validate.js"></script>
@@ -808,9 +763,8 @@
     <script src="masonry.pkgd.js"></script>
     <script src="masonry-filter.js"></script>
     <script src="jquery.slimscroll.js"></script>
-    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-    <!-- Google map api-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz2w7HUaWudHwd7AWQpCL48Qs050WOn9s"></script>
+    <script src="boxicons.js"></script>
+    <script src="particles.min.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>

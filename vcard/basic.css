@@ -155,6 +155,10 @@ body {
 	font-size: 14px;
 }
 
+.row .col i{
+	font-size: 20px;
+}
+
 .row .col .col {
 	padding-top: 0;
 	padding-bottom: 20px;
@@ -581,12 +585,18 @@ a {
     text-decoration: none;
     opacity: 1;
     outline: none;
-    text-transform: lowercase;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #2eca7f;
+	color: #00F260;
+}
+
+a#more:hover {
+	text-decoration: none;
+	background: linear-gradient(to right, #0575E6 .1rem, #00F260 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
 /* lists */
