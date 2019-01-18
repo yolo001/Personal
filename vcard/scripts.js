@@ -371,8 +371,9 @@ particlesJS("particles-js", {
 		"number": {
 			"value": 340,
 			"density": {
-				"enable": false,
-				"value_area": 9000
+				"enable": true,
+				"value_area": 400
+				'density_auto': true,
 			}
 		},
 		"color": {
@@ -467,7 +468,7 @@ particlesJS("particles-js", {
 				"duration": 0.4
 			},
 			"push": {
-				"particles_nb": 4
+				"particles_nb": 80
 			},
 			"remove": {
 				"particles_nb": 2

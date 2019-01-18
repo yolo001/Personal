@@ -267,6 +267,11 @@
 		display: block;
 	}
 
+	.card-started,
+	.card-inner.active,
+	.card-inner  {
+		left: 0px;
+	}
 }
 
 @media (max-width: 560px) {
