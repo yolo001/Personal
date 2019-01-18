@@ -362,75 +362,9 @@ $(function () {
 	$('body').on('contextmenu', 'img', function (e) {
 		return false;
 	});
-
-
-	/*
-		Google Maps
-	*/
-
-	if ($('#map').length) {
-		initMap();
-	}
-
 });
 
 
-/*
-	Google Map Options
-*/
-
-function initMap() {
-	var myLatlng = new google.maps.LatLng(40.773328, -73.960088); // <- Your latitude and longitude
-	var styles = [{
-			"featureType": "water",
-			"stylers": [{
-					"color": "#d8dee9"
-				},
-				{
-					"visibility": "on"
-				}
-			]
-		},
-		{
-			"featureType": "landscape",
-			"stylers": [{
-				"color": "#eeeeee"
-			}]
-		}
-	]
-
-	var mapOptions = {
-		zoom: 14,
-		center: myLatlng,
-		mapTypeControl: false,
-		disableDefaultUI: true,
-		zoomControl: true,
-		scrollwheel: false,
-		styles: styles
-	}
-
-	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-	var marker = new google.maps.Marker({
-		position: myLatlng,
-		map: map,
-		title: 'We are here!'
-	});
-}
-
-$(document).ready(function () {
-	$("#more").click(function () {
-		var elem = $("#more").text();
-		if (elem == "Read More") {
-			//Stuff to do when btn is in the read more state
-			$("#more").text("Read Less");
-			$("#readmore").slideDown();
-		} else {
-			//Stuff to do when btn is in the read less state
-			$("#more").text("Read More");
-			$("#readmore").slideUp();
-		}
-	});
-});
 
 particlesJS("particles-js", {
 	"particles": {

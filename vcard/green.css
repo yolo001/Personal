@@ -115,7 +115,9 @@ button:hover {
 }
 
 .resume-items .resume-item.active .date {
-  color: #2eca7f;
+  background: linear-gradient(to right, #0575E6 0%, #00F260 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .resume-items .resume-item.active .date:before {
