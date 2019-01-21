@@ -19,8 +19,7 @@
   <meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio">
   <meta name="author" content="beshleyua">
   <!-- Load Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" attr>
   <!-- Load CSS-->
   <link rel="stylesheet" href="basic.css">
@@ -67,6 +66,7 @@
               <ion-icon name="person"></ion-icon><span class="link">About</span>
             </a></li>
           <li><a href="#resume-card"><span class="icon ion-android-list"></span><span class="link">Resume</span></a></li>
+          <li><a href="#games-card"><span class="icon ion-android-list"></span><span class="link">Snake</span></a></li>
           <!-- <li><a href="#works-card"><span class="icon ion-paintbrush"></span><span class="link">Works</span></a></li> -->
           <!-- <li><a href="#blog-card"><span class="icon ion-chatbox-working"></span><span class="link">Blog</span></a></li> -->
           <li><a href="#contacts-card"><span class="icon ion-at"></span><span class="link">Contact</span></a></li>
@@ -80,7 +80,7 @@
         <!-- profile image-->
         <div class="slide" style="background-image: url(../coding.jpg);"></div>
         <!-- profile photo-->
-        <div class="image"><img src="../photo_2019-01-17_15-43-14.jpg" alt=""></div>
+        <div class="image"><img src="photo_2019-01-17_15-43-14.jpg" alt=""></div>
         <!-- profile titles-->
         <div class="title">Prana Apsara Wijaya</div>
         <div class="subtitle">Front End Dev</div>
@@ -94,8 +94,9 @@
             <span class="fab fa-linkedin"></span></a>
         </div>
         <!-- profile buttons-->
-        <div class="lnks"><a class="lnk" href="#"><span class="text">Download CV</span><span class="ion ion-archive"></span></a><a
-            class="lnk discover" href="#"><span class="text">Contact Me</span><i class="fas fa-arrow-right"></i></a></div>
+        <div class="lnks"><a class="lnk" href="Prana Apsara Wijaya.pdf" download="CV"><span class="text">Download CV</span><span
+              class="ion ion-archive"></span></a><a class="lnk discover" href="#"><span class="text">Contact Me</span><i
+              class="fas fa-arrow-right"></i></a></div>
       </div>
     </div>
     <!-- Card - About-->
@@ -517,6 +518,12 @@
         </div>
       </div>
     </div>
+    <!-- Card - Contacts-->
+    <div class="card-inner Game" id="games-card">
+      <div class="">
+        <canvas id="snake" width="570px" height="570px"> </canvas>
+      </div>
+    </div>
 
 
     <!-- Card - Contacts-->
@@ -594,6 +601,7 @@
   <script src="jquery.slimscroll.js"></script>
   <script src="boxicons.js"></script>
   <script src="particles.min.js"></script>
+  <script src="snake.js"></script>
   <script src="scripts.js"></script>
   <script>
     // Initialize and add the map
@@ -607,7 +615,64 @@
       var map = new google.maps.Map(
         document.getElementById('map'), {
           zoom: 15,
-          center: uluru
+          center: uluru,
+          styles: [{
+              "featureType": "administrative.country",
+              "elementType": "all",
+              "stylers": [{
+                  "visibility": "on"
+                },
+                {
+                  "color": "#ea09dc"
+                },
+                {
+                  "lightness": "24"
+                },
+                {
+                  "saturation": "79"
+                },
+                {
+                  "weight": "0.01"
+                }
+              ]
+            },
+            {
+              "featureType": "landscape",
+              "elementType": "all",
+              "stylers": [{
+                  "visibility": "on"
+                },
+                {
+                  "hue": "#00f8ff"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "all",
+              "stylers": [{
+                  "color": "#d84949"
+                },
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "all",
+              "stylers": [{
+                "color": "#00f260"
+              }]
+            },
+            {
+              "featureType": "water",
+              "elementType": "all",
+              "stylers": [{
+                "color": "#0575e6"
+              }]
+            }
+          ]
         });
       // The marker, positioned at Uluru
       var marker = new google.maps.Marker({
@@ -615,8 +680,8 @@
         map: map
       });
     }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=
 AIzaSyDJ3x-6vOD-WKd8RUEm4GpcKkCyUBN4mrk
 &callback=initMap"></script>
 </body>

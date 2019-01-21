@@ -82,10 +82,11 @@ button:hover {
 }
 
 .content .title:before {
-  background: -moz-linear-gradient(-45deg, #0575E6 0%, #00F260 100%);
-  background: -webkit-linear-gradient(-45deg, #0575E6 0%, #00F260 100%);
-  background: linear-gradient(135deg,#0575E6 0%, #00F260 100%);
+  background: -moz-linear-gradient(to right, #00f260, #00f1a1, #00edd2, #00e5f1, #00dbfd, #00d0fe, #15c4fc, #32b8f9, #00a8f7, #0098f3, #0087ee, #0575e6);
+  background: -webkit-linear-gradient(to right, #00f260, #00f1a1, #00edd2, #00e5f1, #00dbfd, #00d0fe, #15c4fc, #32b8f9, #00a8f7, #0098f3, #0087ee, #0575e6);
+  background: linear-gradient(to right, #00f260, #00f1a1, #00edd2, #00e5f1, #00dbfd, #00d0fe, #15c4fc, #32b8f9, #00a8f7, #0098f3, #0087ee, #0575e6);
 }
+
 
 .service-items .service-item .icon {
   background: -moz-radial-gradient(center, ellipse cover, #2eca7f 0%, #2eca7f 4%, #0575E6 100%); /* ff3.6+ */

@@ -369,20 +369,20 @@ $(document).ready(function() {
 particlesJS("particles-js", {
 	"particles": {
 		"number": {
-			"value": 340,
+			"value": 170,
 			"density": {
 				"enable": true,
-				"value_area": 400
+				"value_area": 900
 			}
 		},
 		"color": {
-			"value": ["#00F260", '#0575E6']
+			"value": ['#00f260', '#00f1a1', '#00edd2', '#00e5f1', '#00dbfd', '#00d0fe', '#15c4fc', '#32b8f9', '#00a8f7', '#0098f3', '#0087ee', '#0575e6']
 		},
 		"shape": {
 			"type": "star",
 			"stroke": {
 				"width": 2,
-				"color": "#0575E6"
+				"color": ['#00f260', '#00f1a1', '#00edd2', '#00e5f1', '#00dbfd', '#00d0fe', '#15c4fc', '#32b8f9', '#00a8f7', '#0098f3', '#0087ee', '#0575e6']
 			},
 			"polygon": {
 				"nb_sides": 5
