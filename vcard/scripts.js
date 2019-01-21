@@ -340,7 +340,9 @@ $(function () {
 	});
 
 
-
+	/*
+		Validate Commect Form
+	*/
 
 	$("#comment_form").validate({
 		rules: {
@@ -362,20 +364,15 @@ $(function () {
 	});
 });
 
-$(document).ready(function() {
-	var canvas = document.getElementById("particles-js");
-	canvas.width = $("#parent").width();
-	canvas.height = $("#parent").height();
-  });
 
 
 particlesJS("particles-js", {
 	"particles": {
 		"number": {
-			"value": 100,
+			"value": 340,
 			"density": {
 				"enable": true,
-				"value_area": 300
+				"value_area": 400
 			}
 		},
 		"color": {
