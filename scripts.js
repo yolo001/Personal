@@ -344,8 +344,6 @@ $(function () {
 	});
 });
 
-<<<<<<< HEAD:vcard/scripts.js
-=======
 $(document).ready(function () {
 	var canvas = document.getElementById("particles-js");
 	canvas.width = $("#parent").width();
@@ -366,7 +364,6 @@ $(document).ready(function() {
 	  }
 	});
   });
->>>>>>> 1b1fb6e97993509f0fea516bc2a257bdf42a32e8:scripts.js
 
 
 particlesJS("particles-js", {
