@@ -464,7 +464,6 @@ strong {
 .lnk,
 .button {
 	position: relative;
-	float: left;
 	width: 50%;
 	height: 70px;
 	line-height: 70px;
